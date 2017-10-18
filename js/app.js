@@ -6,6 +6,8 @@ var Enemy = function() {
     // The image/sprite for our enemies, this uses
     // a helper we've provided to easily load images
     this.sprite = 'images/enemy-bug.png';
+    this.position = //em construção
+    this.speed = //em construção
 };
 
 // Update the enemy's position, required method for game
@@ -24,13 +26,34 @@ Enemy.prototype.render = function() {
 // Now write your own player class
 // This class requires an update(), render() and
 // a handleInput() method.
+var Player = function(){
+
+};
+
+Player.prototype.update(){
+
+};
+
+Player.prototype.render(){
+
+};
+
+Player.prototype.handleInput(){
+
+};
 
 
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
 // Place the player object in a variable called player
-
-
+var bug1 = new Enemy();
+var bug2 = new Enemy();
+var bug3 = new Enemy();
+// inimigos
+var allEnemies = [];
+allEnemies.push(bug1, bug2, bug3);
+//jogador
+var player = new Player();
 
 // This listens for key presses and sends the keys to your
 // Player.handleInput() method. You don't need to modify this.
